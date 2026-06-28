@@ -92,26 +92,40 @@ if (counters.length) {
 
 /* ---------- Contact Form Feedback ---------- */
 const contactForm = document.getElementById('quote-form');
-const successState = document.getElementById('success-state');
 if (contactForm) {
   contactForm.addEventListener('submit', e => {
     e.preventDefault();
-    if (successState) {
-      contactForm.style.display = 'none';
-      successState.style.display = 'block';
-    } else {
-      const btn = contactForm.querySelector('[type="submit"]');
-      const orig = btn.innerHTML;
-      btn.innerHTML = '✅ Sent — we\'ll be in touch soon!';
-      btn.disabled = true;
-      btn.style.opacity = '0.75';
-      setTimeout(() => {
-        btn.innerHTML = orig;
-        btn.disabled = false;
-        btn.style.opacity = '';
-        contactForm.reset();
-      }, 3500);
-    }
+    
+    const formData = new FormData(contactForm);
+    const fullName = formData.get('full_name') || '';
+    const phone = formData.get('phone') || '';
+    const serviceRaw = formData.get('service_type') || '';
+    const origin = formData.get('origin') || '';
+    const destination = formData.get('destination') || '';
+    const message = formData.get('message') || '';
+    
+    const serviceMap = {
+      'ftl': 'Full Truck Load (FTL) Transport',
+      'container': 'Container Transport',
+      'industrial': 'Industrial Goods Transport',
+      'long-distance': 'Long Distance Transport',
+      'factory': 'Factory Material Transport',
+      'other': 'Other'
+    };
+    const serviceName = serviceMap[serviceRaw] || serviceRaw;
+
+    let waMessage = `*New Transport Enquiry*\n\n`;
+    waMessage += `*Name:* ${fullName}\n`;
+    waMessage += `*Phone:* ${phone}\n`;
+    waMessage += `*Service Needed:* ${serviceName}\n`;
+    if (origin) waMessage += `*Pickup Location:* ${origin}\n`;
+    if (destination) waMessage += `*Delivery Location:* ${destination}\n`;
+    if (message) waMessage += `*Details:* ${message}\n`;
+
+    const encodedMessage = encodeURIComponent(waMessage);
+    const waNumber = '919633665648';
+    
+    window.open(`https://wa.me/${waNumber}?text=${encodedMessage}`, '_blank');
   });
 }
 
