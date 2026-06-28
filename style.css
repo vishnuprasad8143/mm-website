@@ -187,7 +187,7 @@ button {
    HEADER
    ============================================================ */
 .site-header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
@@ -270,11 +270,15 @@ button {
   line-height: 1;
   font-size: 0.875rem;
   font-weight: 700 !important;
-  padding: 11px 24px;
+  padding: 11px 24px !important;
   border-radius: 6px;
   background: var(--navy) !important;
   color: var(--bg-white) !important;
   transition: background var(--dur) var(--ease), transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease) !important;
+}
+
+.nav-links a.nav-cta::after {
+  display: none;
 }
 
 .nav-cta-phone {
@@ -417,7 +421,6 @@ button {
   min-height: 92vh;
   display: flex;
   align-items: center;
-  padding-top: 85px; /* Offset for fixed header */
   overflow: hidden;
   background: var(--navy-deep);
 }
