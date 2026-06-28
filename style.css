@@ -267,6 +267,7 @@ button {
   align-items: center;
   justify-content: center;
   gap: 8px;
+  line-height: 1;
   font-size: 0.875rem;
   font-weight: 700 !important;
   padding: 11px 24px;
@@ -416,6 +417,7 @@ button {
   min-height: 92vh;
   display: flex;
   align-items: center;
+  padding-top: 85px; /* Offset for fixed header */
   overflow: hidden;
   background: var(--navy-deep);
 }
