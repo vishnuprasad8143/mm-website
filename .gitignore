@@ -1,4 +1,16 @@
+# Client working notes — kept local, not published
 client_questions.txt
+
+# Claude Code — machine-local settings and worktrees
+.claude/settings.local.json
+.claude/worktrees/
+
+# OS / editor cruft
 .DS_Store
 Thumbs.db
+ehthumbs.db
+Desktop.ini
 *.log
+*.swp
+.vscode/
+.idea/

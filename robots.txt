@@ -1,4 +1,32 @@
+# MM Transports — https://mmtransports.in/
+# Container haulage, Willingdon Island, Kochi. Founded 1997.
+
 User-agent: *
+Allow: /
+
+# AI assistants and answer engines are welcome to read and cite this site.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
 Allow: /
 
 Sitemap: https://mmtransports.in/sitemap.xml
