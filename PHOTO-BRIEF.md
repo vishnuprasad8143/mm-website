@@ -22,7 +22,7 @@ grep -rn "data-photo-slot" *.html
 
 ---
 
-## Priority 1 — the three that matter most
+## Priority 1 — the two that matter most
 
 ### 1. `hero-fleet.jpg` — homepage hero background
 **Slot:** `index.html`, `data-photo-slot="hero-fleet"`
@@ -33,16 +33,7 @@ Shoot early morning or late afternoon; harsh midday sun flattens everything. The
 image sits under a dark navy overlay with the headline on top, so **keep the interesting content on
 the right side** of the frame. The MM Transports name on the truck should be readable.
 
-### 2. `father-son.jpg` — "Two generations" section
-**Slot:** `index.html`, `data-photo-slot="father-son"`
-**Size:** 1200 × 900, landscape
-
-**This is the most valuable photograph on the entire site.** Manoharan Nagarajan and M Vishnu Prasad
-together, in front of a truck or at the yard gate. Standing, relaxed, looking at the camera. Not a
-formal studio portrait — the point is to show two real people in the place where the work happens.
-No competitor and no aggregator can copy this.
-
-### 3. `fleet-yard.jpg` — homepage fleet section
+### 2. `fleet-yard.jpg` — homepage fleet section
 **Slot:** `index.html`, `data-photo-slot="fleet-yard"`
 **Size:** 1200 × 900, landscape
 
@@ -53,35 +44,29 @@ operation when you can see them together.
 
 ## Priority 2 — About page
 
-### 4. `yard-wide.jpg` — About page story section
+### 3. `yard-wide.jpg` — About page story section
 **Slot:** `about.html`, `data-photo-slot="yard-wide"`
 **Size:** 900 × 1200, **portrait** (this one is a tall frame)
 
 The Willingdon Island office and yard, or a truck being loaded. Vertical composition.
 
-### 5. `manoharan-nagarajan.jpg` — founder portrait
-**Slot:** `about.html`, `data-photo-slot="person-manoharan"`
+### 4. `vishnu-prasad.jpg` — General Manager portrait
+**Slot:** `about.html`, `data-photo-slot="person-vishnu"`
 **Size:** 800 × 600, landscape (displays as a 4:3 crop)
 
 Head-and-shoulders or waist-up, at the yard or office rather than a studio. Currently showing the
-initials "MN" on a navy tile, which works but is obviously a placeholder.
+initials "VP" on a navy tile, which works but is obviously a placeholder.
 
 Replace the whole inner `<div class="person-photo">` content with:
 ```html
-<img src="images/manoharan-nagarajan.jpg" alt="Manoharan Nagarajan, founder of MM Transports" />
+<img src="images/vishnu-prasad.jpg" alt="M Vishnu Prasad, General Manager at MM Transports" />
 ```
-
-### 6. `vishnu-prasad.jpg` — operations portrait
-**Slot:** `about.html`, `data-photo-slot="person-vishnu"`
-**Size:** 800 × 600, landscape
-
-Same treatment as above. Replace the `VP` initials tile the same way.
 
 ---
 
 ## Priority 3 — social sharing
 
-### 7. `og-cover.jpg` — WhatsApp / social preview card
+### 5. `og-cover.jpg` — WhatsApp / social preview card
 **Referenced by:** all four pages, in the `og:image` meta tag
 **Size:** 1200 × 630 exactly
 
@@ -100,8 +85,7 @@ Ask for these in one visit:
 
 - [ ] Wide shot of several trucks in the yard (multiple angles)
 - [ ] One truck three-quarter view, low angle, MM branding readable
-- [ ] Manoharan Nagarajan and M Vishnu Prasad together
-- [ ] Each of them individually
+- [ ] M Vishnu Prasad, at the yard or office
 - [ ] A container being loaded or secured
 - [ ] The office exterior at CDEA Building
 - [ ] A driver with his truck — with his permission
