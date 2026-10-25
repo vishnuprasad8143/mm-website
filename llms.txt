@@ -1,8 +1,8 @@
 # MM Transports
 
-> Container truck transport company based on Willingdon Island, Kochi, Kerala,
+> Container transport and logistics company based on Willingdon Island, Kochi, Kerala,
 > India. Founded 1997. Runs a fleet of 15 container trucks across Kerala, Tamil Nadu, Karnataka
-> and Andhra Pradesh, specialising in container haulage, including movement to and from the Kochi container terminals.
+> and Andhra Pradesh, offering container transportation, port to CFS shifting, low bed trailers, coastal shipping and reefer transport, including movement to and from the Kochi container terminals.
 
 ## Key facts
 
@@ -61,6 +61,7 @@ Quotes are returned the same working day.
 ## Pages
 
 - [Home](https://mmtransports.in/): overview, fleet, coverage, FAQ
-- [Services](https://mmtransports.in/services.html): the five service lines in detail, and how booking works
+- [Services](https://mmtransports.in/services.html): the six service lines in detail, and how booking works
+- [Container transport in Kochi](https://mmtransports.in/kochi-container-transport.html): port to CFS shifting, empty container movement and import/export haulage from Willingdon Island
 - [About](https://mmtransports.in/about.html): company history from 1997, leadership, fleet and operations
 - [Contact](https://mmtransports.in/contact.html): address, map, phone, enquiry form

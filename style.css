@@ -5,28 +5,27 @@
    solid blocks, corrugated-container texture. No serif, no italics.
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap');
 
 /* ------------------------------------------------------------
    1. TOKENS
    ------------------------------------------------------------ */
 :root {
-  --navy: #0B2545;
-  --navy-2: #12335E;
-  --navy-deep: #071A33;
-  --amber: #F2A900;
-  --amber-dark: #B87F00;   /* amber text on light backgrounds */
+  --navy: #333333;
+  --navy-2: #444444;
+  --navy-deep: #1E1E1E;
+  --amber: #FF5429;
+  --amber-dark: #C93410;   /* amber text on light backgrounds */
   --white: #FFFFFF;
-  --concrete: #F3F4F6;
-  --concrete-2: #E4E7EB;
+  --concrete: #F4F4F4;
+  --concrete-2: #E6E6E6;
 
-  --text: #1A2230;
-  --text-mid: #465061;
-  --text-light: #6B7585;
-  --on-dark: #F2F5F9;
-  --on-dark-mid: #A9B7CB;
+  --text: #262626;
+  --text-mid: #4A4A4A;
+  --text-light: #6E6E6E;
+  --on-dark: #F5F5F5;
+  --on-dark-mid: #B8B8B8;
 
-  --line: #D5DAE1;
+  --line: #DADADA;
   --line-dark: rgba(255, 255, 255, .16);
 
   --font-head: 'Barlow Condensed', 'Arial Narrow', sans-serif;
@@ -254,7 +253,7 @@ p { text-wrap: pretty; }
 }
 .hero-media { position: absolute; inset: 0; z-index: -1; background: var(--corrugate), linear-gradient(160deg, var(--navy-2), var(--navy-deep)); }
 .hero-media img { width: 100%; height: 100%; object-fit: cover; }
-.hero-media:has(img)::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(7,26,51,.92), rgba(7,26,51,.55)); }
+.hero-media:has(img)::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(30,30,30,.92), rgba(30,30,30,.55)); }
 
 .hero-badge {
   display: inline-block;
@@ -556,3 +555,7 @@ textarea.form-control { min-height: 120px; resize: vertical; }
 @media print {
   .site-header, .mobile-bar, .hero-media { display: none; }
 }
+
+/* Header logo image */
+.nav .logo img { height: 56px; width: auto; }
+@media (max-width: 480px) { .nav .logo img { height: 42px; } }

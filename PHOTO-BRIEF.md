@@ -2,7 +2,7 @@
 
 Every photo on the site is currently a **stock placeholder** (generic foreign trucks from Unsplash).
 Replacing them with real MM Transports photos is the single biggest credibility upgrade available,
-and it costs nothing but an hour at the yard.
+and it costs nothing but an hour with a camera.
 
 A good phone camera in morning light beats polished stock, because the whole point is that these are
 *your* trucks.
@@ -28,33 +28,33 @@ grep -rn "data-photo-slot" *.html
 **Slot:** `index.html`, `data-photo-slot="hero-fleet"`
 **Size:** 1920 × 1080 minimum, landscape
 
-Several MM trucks together — lined up in the yard, or one shot from a low angle so it looks big.
+Several MM trucks together — lined up together, or one shot from a low angle so it looks big.
 Shoot early morning or late afternoon; harsh midday sun flattens everything. The left half of this
 image sits under a dark navy overlay with the headline on top, so **keep the interesting content on
 the right side** of the frame. The MM Transports name on the truck should be readable.
 
-### 2. `fleet-yard.jpg` — homepage fleet section
-**Slot:** `index.html`, `data-photo-slot="fleet-yard"`
+### 2. `fleet.jpg` — homepage fleet section
+**Slot:** `index.html`, `data-photo-slot="fleet"`
 **Size:** 1200 × 900, landscape
 
-The yard with trucks parked in a row. Wide enough to convey scale. Fifteen trucks looks like a real
+Trucks parked in a row. Wide enough to convey scale. Fifteen trucks looks like a real
 operation when you can see them together.
 
 ---
 
 ## Priority 2 — About page
 
-### 3. `yard-wide.jpg` — About page story section
-**Slot:** `about.html`, `data-photo-slot="yard-wide"`
+### 3. `office-wide.jpg` — About page story section
+**Slot:** `about.html`, `data-photo-slot="office-wide"`
 **Size:** 900 × 1200, **portrait** (this one is a tall frame)
 
-The Willingdon Island office and yard, or a truck being loaded. Vertical composition.
+The Willingdon Island office, or a truck being loaded. Vertical composition.
 
 ### 4. `vishnu-prasad.jpg` — General Manager portrait
 **Slot:** `about.html`, `data-photo-slot="person-vishnu"`
 **Size:** 800 × 600, landscape (displays as a 4:3 crop)
 
-Head-and-shoulders or waist-up, at the yard or office rather than a studio. Currently showing the
+Head-and-shoulders or waist-up, at the office rather than a studio. Currently showing the
 initials "VP" on a navy tile, which works but is obviously a placeholder.
 
 Replace the whole inner `<div class="person-photo">` content with:
@@ -83,9 +83,9 @@ inside the frame, since WhatsApp crops the edges on some devices.
 
 Ask for these in one visit:
 
-- [ ] Wide shot of several trucks in the yard (multiple angles)
+- [ ] Wide shot of several trucks together (multiple angles)
 - [ ] One truck three-quarter view, low angle, MM branding readable
-- [ ] M Vishnu Prasad, at the yard or office
+- [ ] M Vishnu Prasad, at the office
 - [ ] A container being loaded or secured
 - [ ] The office exterior at CDEA Building
 - [ ] A driver with his truck — with his permission

@@ -12,8 +12,8 @@ const CONFIG = {
   // Where enquiry emails go. FormSubmit relays to these addresses.
   // IMPORTANT: the first submission triggers a one-time activation email
   // to enquiryTo — click the link in it once, and the form is live.
-  enquiryTo: 'vishnuprasad@mmtransports.in',
-  enquiryCc: 'operations@mmtransports.in',
+  enquiryTo: 'operations@mmtransports.in',
+  enquiryCc: 'vishnuprasad@mmtransports.in',
 
   // Email relay endpoint. FormSubmit needs no account or API key.
   // To switch providers later, only this line and sendEnquiry() change.
@@ -180,6 +180,7 @@ if (form) {
     phone: field('phone'),
     email: field('email'),
     service: field('service'),
+    container: field('container'),
     origin: field('origin'),
     destination: field('destination'),
     details: field('details'),
@@ -267,6 +268,7 @@ if (form) {
           Phone: data.phone,
           Email: data.email || '—',
           Service: data.service,
+          Container: data.container || '—',
           Pickup: data.origin || '—',
           Delivery: data.destination || '—',
           Details: data.details || '—'
